@@ -1,3 +1,6 @@
 .header {
+  padding: 25px 35px;
   display: block;
+  animation: top-to-down-animation $extra-transition-settings;
+  background-color: $color-default-white;
 }

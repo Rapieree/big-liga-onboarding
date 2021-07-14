@@ -1,0 +1,39 @@
+@keyframes left-to-right-animation {
+  from {
+    transform: translateX(-50vw);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes right-to-left-animation {
+  from {
+    transform: translateX(50vw);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes top-to-down-animation {
+  from {
+    transform: translateY(-60vh);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink-animation {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

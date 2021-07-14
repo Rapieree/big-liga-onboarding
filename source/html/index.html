@@ -12,13 +12,16 @@
     @@include("build/img/sprite_auto.svg")
   </div>
 
-  <div class="wrapper">
-    @@include("source/html/base/header.html")
+  @@include("source/html/base/loader.html")
 
-    <main>
-      <div class="container">
-      </div>
-    </main>
+  <div class="wrapper">
+    <div class="wrapper__main-screen">
+      @@include("source/html/base/header.html")
+      @@include("source/html/blocks/promo.html")
+    </div>
+
+      <main>
+      </main>
 
     @@include("source/html/base/footer.html")
   </div>

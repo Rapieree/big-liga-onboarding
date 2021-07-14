@@ -1,0 +1,13 @@
+.wrapper {
+  display: none;
+}
+
+.wrapper--show {
+  display: block;
+}
+
+.wrapper__main-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

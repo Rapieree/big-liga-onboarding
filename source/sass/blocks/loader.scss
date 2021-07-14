@@ -1,0 +1,85 @@
+.loader {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $color-default-white;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.loader--show {
+  display: block;
+}
+
+.loader--fade {
+  opacity: 0;
+}
+
+.loader__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  svg,
+  g {
+    overflow: visible;
+  }
+
+  svg {
+    @include viewport--md {
+      width: 550px;
+      height: 70px;
+    }
+  }
+}
+
+.loader__logo-title {
+  animation: left-to-right-animation $extra-transition-settings;
+}
+
+.loader__logo-image {
+  animation: top-to-down-animation $extra-transition-settings;
+}
+
+.loader__logo-description {
+  animation: right-to-left-animation $extra-transition-settings;
+}
+
+.loader__prompt {
+  font-family: $font-family--neue-machina;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 22px;
+  color: $color-default-black;
+
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: blink-animation 1.2s infinite alternate;
+}
+
+.loader__prompt--show {
+  opacity: 1;
+}
+
+.loader__prompt-desktop {
+  @include viewport--md {
+    display: none;
+  }
+}
+
+.loader__prompt-tablet {
+  display: none;
+
+  @include viewport--md {
+    display: inline;
+  }
+}
